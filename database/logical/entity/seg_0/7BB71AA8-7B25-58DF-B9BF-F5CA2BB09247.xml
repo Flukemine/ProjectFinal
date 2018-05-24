@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BB71AA8-7B25-58DF-B9BF-F5CA2BB09247" name="Lotto Numbers">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 14:59:26 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PersonId" id="C244D08C-65F9-8C94-60AF-97E7291B7FB4">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:01:56 UTC</createdTime>
+<generatorID>F0C039FE-63B0-8529-4D7D-2334BF1B543D</generatorID>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<referedAttribute>63DFDE96-36DC-791C-BDE9-CD9C94CC491C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LottoNum1" id="4CF865DC-887B-BF78-D8DE-4FBFD551F188">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:02:33 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LottoNum2" id="7E1FC059-495B-9E65-4EBD-B12934EAC41C">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:02:39 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LottoNum3" id="D79D90C0-5659-DA5A-99A9-1420BB6B10FE">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:02:44 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LottoNum4" id="C3E4C71A-36E2-4ED3-3508-EB182D5A0984">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:02:44 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LottoNum5" id="CE0E3BCF-E924-9F64-676F-6C2F4AD87BA7">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:02:44 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="setId" id="F0FABF3D-0735-B0D0-9851-7A52D4A72C6F">
+<createdBy>b43145</createdBy>
+<createdTime>2018-04-11 11:32:26 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F43514D3-9C02-1BC3-AE27-1B55BA7B8DCC" name="Lotto Numbers PK">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:06:10 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0FABF3D-0735-B0D0-9851-7A52D4A72C6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

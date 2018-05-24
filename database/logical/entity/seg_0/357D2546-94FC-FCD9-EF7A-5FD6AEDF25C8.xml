@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="357D2546-94FC-FCD9-EF7A-5FD6AEDF25C8" name="Person">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 14:58:40 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PersonId" id="63DFDE96-36DC-791C-BDE9-CD9C94CC491C">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 14:59:50 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="6C7907FB-48B3-19E1-DBED-D8878DD564C1">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 14:59:50 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Surname" id="22E8A02C-FDBE-446C-4A49-927A4EBD1ADB">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 14:59:50 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Username" id="47A50AB2-CF79-08F2-317A-9DB6980B2046">
+<createdBy>b43145</createdBy>
+<createdTime>2018-04-11 11:32:58 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="E7E38E35-DAE7-9EFD-0934-F995FEC47104">
+<createdBy>b43145</createdBy>
+<createdTime>2018-04-11 11:33:17 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FE6DFE1-0C19-517D-FA6C-F66FCE91C9CE" name="Person PK">
+<createdBy>dawsoncamilleri</createdBy>
+<createdTime>2018-03-27 15:01:09 UTC</createdTime>
+<ownerDesignName>database</ownerDesignName>
+<engineerTo>
+<item key="57D11B7E-32EF-4411-1793-4428B597AA92" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>63DFDE96-36DC-791C-BDE9-CD9C94CC491C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

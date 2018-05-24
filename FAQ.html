@@ -1,0 +1,162 @@
+	
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Game On!</title>
+                              <link rel="icon" href="lottos.png">
+
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+                        <link rel="stylesheet" href="projectscss.css"  media = "screen and (min-width:769px)" >
+            	<link rel = "stylesheet" type="text/css" href = "mediaqueries(tablets).css" media = "screen and (min-width:481px) and (max-width:768px)"/>
+		<link rel = "stylesheet" type="text/css" href = "mediaquery(phones).css" media = "screen and (max-width:480px)"/>
+                        	<meta name="viewport" content="width=device-width" />
+
+<script src = "prog.js"></script>
+        
+    </head>
+    
+    
+    <body onload = "startTime()">
+        
+    
+        <div class="container">
+          <div class="jumbotron">
+                            <img id = "logo" src = "logo.jpg" />
+            <h1> Dawson's Lotto Site</h1> 
+            
+</div>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="project.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="videopage.html">Video Page</a>
+      </li>
+        
+      <li class="nav-item">
+        <a class="nav-link " href="contactUs.html"> Contact Us</a>
+      </li>
+          
+         <li class="nav-item">
+        <a class="nav-link " href="#"> FAQ</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link " href="map.html"> Map</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " href="LottoHistory.php"> Player History</a>
+      </li>
+    </ul>
+          <p id = "txt" > </p>
+
+      <label class="switch">
+  <input type="checkbox" onCLick = "playMusic()">
+  <span class="slider"></span>
+</label>
+  </div>
+           
+           
+           
+           
+</nav>
+ <div class="container">
+          <div class="jumbotron">
+            
+                         <img  class = "icons" src="pictures/faq.png" >                
+            			<h2> FAQ </h2> 
+          
+ 
+              <br>
+                                                           <hr>
+
+<button class="accordion">How Do I play?</button>
+<div class="panel">
+  <p>Choose 5 numbers and then 5 numbers will then be drawn and depending on the amount that you guessed right, the more money you will win</p>
+</div>
+              <br>
+<button class="accordion">How old do I have to be inorder to play?</button>
+<div class="panel">
+  <p>Since it is gambling, you need to be over 18 </p>
+</div>
+              <br>
+              
+<button class="accordion">How much does it cost to play?</button>
+<div class="panel">
+  <p>Prices vary from 2 to 10 euro </p>
+</div>
+           <hr> 
+              <h3>Let's calculate how much you could win! </h3>
+            <br>
+              <br>
+              <label> Which Ticket would you buy?</label>
+       <select id = "nums">
+  <option value="5">5 euro</option>
+  <option value="7.50">7.50 euro</option>
+  <option value="10">10 euro</option>
+  
+</select>
+              <br>
+           <label> How many numbers would be guessed correctly?</label>
+<form action="">
+  <input id = "first" type="radio" name="gender" value="1"> 1
+  <input id = "second" type="radio" name="gender" value="2"> 2
+  <input id = "third" type="radio" name="gender" value="3"> 3
+     <input id = "fourth"  type="radio" name="gender" value="4"> 4
+  <input id = "fifth" type="radio" name="gender" value="5"> 5
+</form>
+              <br>
+              <p id = "final"> </p>
+              <button onClick = "findProfit()"> Calculate</button>
+
+
+      </div>
+            </div>
+ 
+     
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].onclick = function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+				  panel.style.maxHeight = null;
+				} else {
+				  panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			  }
+			}
+              console.log(i);          
+		</script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
