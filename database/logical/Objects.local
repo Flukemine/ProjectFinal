@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="357D2546-94FC-FCD9-EF7A-5FD6AEDF25C8" name="Person" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="ACD67CD2-F70C-5851-0F15-4DE8400B7443" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Entity" objectID="7BB71AA8-7B25-58DF-B9BF-F5CA2BB09247" name="Lotto Numbers" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="ACD67CD2-F70C-5851-0F15-4DE8400B7443" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Relation" objectID="F0C039FE-63B0-8529-4D7D-2334BF1B543D" name="Relation_2" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="ACD67CD2-F70C-5851-0F15-4DE8400B7443" propertySourceId="357D2546-94FC-FCD9-EF7A-5FD6AEDF25C8" propertyTargetId="7BB71AA8-7B25-58DF-B9BF-F5CA2BB09247"/>
-</oracle.dbtools.crest.model.design.logical.LogicalDesign>
